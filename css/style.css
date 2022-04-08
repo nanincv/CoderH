@@ -276,6 +276,15 @@ p {
 	padding-top:80px;
 }
 
+.box1:hover {
+	-webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+		-webkit-transition: transform 0.5s ease-in-out;
+
+}
+
+
 .box1, .box2 p{
 	padding: 20px 50px 50px 50px;
 	
