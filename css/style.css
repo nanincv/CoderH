@@ -125,7 +125,7 @@ p {
 /*Main*/
 .bannerhome {
 	height: 70vh;
-	background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)),url('/assets/img/010sparklers.jpg');
+	background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)),url('assets/img/010sparklers.jpg');
     display: grid;
 	justify-content: center;
 	grid-template-columns: repeat(8,1fr);
@@ -241,7 +241,7 @@ p {
 
 #comotrabajamos{
 	color:#fff;
-	background-image: url('/assets/img/banner_home.jpg');
+	background-image: url('assets/img/banner_home.jpg');
 	background-color: rgba(24, 24, 24, 0.6);
 	background-blend-mode: multiply;
 	background-size: cover;
