@@ -125,7 +125,7 @@ p {
 /*Main*/
 .bannerhome {
 	height: 70vh;
-	background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)),url('assets/img/010sparklers.jpg');
+	background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)),url('../assets/img/010sparklers.jpg');
     display: grid;
 	justify-content: center;
 	grid-template-columns: repeat(8,1fr);
@@ -169,7 +169,7 @@ p {
 /*bannersinternos*/
 
 .bannerintro {
-	background-image: url('/assets/img/006uplight.jpg');
+	background-image: url('../assets/img/006uplight.jpg');
 	background-color: rgba(15, 15, 15, 0.5);
 	background-blend-mode: multiply;
 	text-align:center;
@@ -241,7 +241,7 @@ p {
 
 #comotrabajamos{
 	color:#fff;
-	background-image: url('assets/img/banner_home.jpg');
+	background-image: url('../assets/img/banner_home.jpg');
 	background-color: rgba(24, 24, 24, 0.6);
 	background-blend-mode: multiply;
 	background-size: cover;
@@ -788,7 +788,7 @@ p {
 
 .bannerhome {
 	height: 80vh;
-	background-image:linear-gradient(to bottom, rgba(253, 249, 249, 0), rgba(0, 0, 0, 0.6)),url('/assets/img/sparkshome_mobile2.jpg');
+	background-image:linear-gradient(to bottom, rgba(253, 249, 249, 0), rgba(0, 0, 0, 0.6)),url('../assets/img/sparkshome_mobile2.jpg');
     background-blend-mode: multiply;
     display: grid;
 	justify-content: center;
@@ -865,7 +865,7 @@ p {
 
 #comotrabajamos{
 	color:#fff;
-	background-image: url('/assets/img/banner_home.jpg');
+	background-image: url('../assets/img/banner_home.jpg');
 	background-color: rgba(24, 24, 24, 0.6);
 	background-blend-mode: multiply;
 	background-size: cover;
