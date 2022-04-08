@@ -125,7 +125,7 @@ p {
 /*Main*/
 .bannerhome {
 	height: 70vh;
-	background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)),url('assets/img/010sparklers.jpg');
+	background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)),url('../assets/img/010sparklers.jpg');
     display: grid;
 	justify-content: center;
 	grid-template-columns: repeat(8,1fr);
