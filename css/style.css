@@ -432,7 +432,7 @@ p {
 .portfolio img {
 	object-fit: cover;
 	width: 100%;
-	height: auto%;
+	height: auto;
 }
 
 /*iluminacion*/
@@ -542,6 +542,14 @@ p {
 	.bannerintrotexto h2{
 		font-size: 30px;
 		line-height: normal;
+}
+
+.portfolio {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
 }
 	
 	/*infouno*/
@@ -1015,6 +1023,14 @@ display: none;
 
 .col_desc p{
 	font-size: 14px;
+}
+
+.portfolio {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
 }
 
 /*Contacto*/
