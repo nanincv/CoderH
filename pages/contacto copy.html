@@ -12,36 +12,19 @@
     <script src='main.js'></script>
 </head>
 <header>
-    <!--nuevo nav--->
-   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8aa89e;">
-    <div class="container-md">
-        <a class="navbar-brand" href="../index.html">
-            <img src="../assets/img/logo.png" alt="" width="80" height="80"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="somos.html">Somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="iluminacion.html">Iluminación</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="eventos.html">Eventos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<!--fin nuevo nav-->
+    <nav class="cabecera">
+            <a class="logo" href="../index.html"><img class="logo" src="../assets/img/logo.png" width=100px; alt="logo"></a>
+        <ul class="navegacion">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="somos.html">Somos</a></li>
+            <li><a href="iluminacion.html">Iluminación</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+         </ul>
+         <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
 </header>
 <main class="fondo">
     <section class="bannerintro">
@@ -58,7 +41,7 @@
 			<form action="#">
                 <div class="form-group">
                     <label for="nombre">Tu Nombre</label>
-				    <input type="text" class="form-control " placeholder="Natalia">
+				    <input type="text" class="form-control" placeholder="Natalia">
                 </div>
                 <div class="form-group">
                     <label for="inputEmail4">Email</label>
@@ -66,7 +49,7 @@
                 </div>
                 <div class="form-group">
 				<label for="evento"> Tipo de evento:</label>
-					<select class="form-control" name="evento" id="">
+					<select class="custom-select" name="evento" id="">
                         <option selected> Despliega las opciones</option>
                         <option value="Casamiento">Casamiento</option>
                         <option value="Institucional">Institucional</option>
@@ -75,34 +58,30 @@
                 </div>
                 <div class="form-group">
                     <label for="fecha">Fecha del evento:</label>
-				    <input type="date" class="form-control" placeholder="seleccioná fecha">
+				    <input type="date" class="form-control" placeholder="seleccioná fecha"><br><br>
                 </div>
                 <div class="form-group">
                 <label for="lugar">Lugar del evento:</label>    
                     <input type="text" class="form-control" placeholder="La enramada"> 
                 </div>		
-                <p class="form_p"> ¿En cuál de nustros servicios estás interesado/a?</p>
-                <div class="custom-control custom-checkbox ">
-                    <input type="checkbox" class="custom-control-input" id="Check1">
-                    <label class="custom-control-label" for="total">Ambientación total</label>
-                  </div>
-                  <div class="custom-control custom-checkbox ">
-                    <input type="checkbox" class="custom-control-input" id="Check2">
-                    <label class="custom-control-label" for="sparklers">Sparklers</label>
-                  </div>
-                  <div class="custom-control custom-checkbox ">
-                    <input type="checkbox" class="custom-control-input" id="check3">
-                    <label class="custom-control-label" for="gobos">Gobo Monograma</label>
-                  </div>
-                <div class="form-group">
-                    <label for="mensaje">Contanos más de tu evento</label>
-                    <textarea class="form-control" id="mensaje" rows="4"></textarea>
-                  </div>
-                <div class="custom-control custom-checkbox">
+				<div class="form-group">
+                    <p>¿En qué servicios estás intereado/a?</p>
+                        <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="check1">
-                            <label class="custom-control-label" for="customCheck1">Quiero recibir sus novedades por mail </label>
+                            <label class="custom-control-label" for="customCheck1">Ambientación total</label>
+                            <input type="checkbox" class="custom-control-input" id="check2">
+                            <label class="custom-control-label" for="customCheck1">Sparklers</label>
+                            <input type="checkbox" class="custom-control-input" id="check3">
+                            <label class="custom-control-label" for="customCheck1">Gobo-monograma</label>
+                          </div>
+                </div class="form-group">
+				  <p>Queres recibir nuestras novedades?</p>
+				<input type="checkbox" name="acepta" value="1">
                 </div>
-                <button type="submit" class="btn btn-light">Enviar</button>
+            <div class="form-group">
+				<input type="submit" class="form-control" value="Enviar">
+				<input type="reset" value="Borrar"><br><br>
+            </div>
 			</form>
         </div>
 	</section>
