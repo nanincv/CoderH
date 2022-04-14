@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../assets/img/logo_ejem.png" type="image/x-icon">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
     <link rel="stylesheet" href="../assets/fontawesome-free-6.1.0-web/css/all.css">
-    <link rel="stylesheet" href="../css/mediaq_styles.css">
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <script src='main.js'></script>
 </head>
 <header>
@@ -38,35 +38,52 @@
         </div>
 	<!-- formulario de contacto -->
 	    <div class="form">
-		<article>
 			<form action="#">
-                <label for="nombre">Tu Nombre</label>
-				<input type="text" placeholder="Natalia"><br><br>
-				<label for="email">Tu email:</label>
-					<input type="email" placeholder="aaa@gmail.com" name="email"><br><br>
+                <div class="form-group">
+                    <label for="nombre">Tu Nombre</label>
+				    <input type="text" class="form-control" placeholder="Natalia">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group">
 				<label for="evento"> Tipo de evento:</label>
-					<select name="evento" id="">
+					<select class="form-control" name="evento" id="">
+                        <option selected> Despliega las opciones</option>
                         <option value="Casamiento">Casamiento</option>
                         <option value="Institucional">Institucional</option>
                         <option value="Cumpleaños">Cumpleaños</option>
-                    </select><br><br>
-                <label for="fecha">Fecha del evento:</label>
-				        <input type="date" placeholder="seleccioná fecha"><br><br>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha del evento:</label>
+				    <input type="date" class="form-control" placeholder="seleccioná fecha">
+                </div>
+                <div class="form-group">
                 <label for="lugar">Lugar del evento:</label>    
-                    <input type="text" placeholder="La enramada"> <br><br>			
-				<div>¿En qué servicios estás intereado/a?</div>
-                    <input type="checkbox" id="ambientacion" name="ambientacion" value="Ambientacion">
-                    <label for="ambientacion"> Ambientación total</label><br>
-                    <input type="checkbox" id="sparklers" name="Sparklers" value="Sparklers">
-                    <label for="sparklers"> Sparklers</label><br>
-                    <input type="checkbox" id="Gobo" name="Gobo" value="Gobo">
-                    <label for="Gobo"> Gobo - Monograma</label><br><br>
-				<div>Queres recibir nuestras novedades?
-				<input type="checkbox" name="acepta" value="1"></div><br>
-				<input type="submit" value="Enviar">
-				<input type="reset" value="Borrar"><br><br>
+                    <input type="text" class="form-control" placeholder="La enramada"> 
+                </div>		
+                <div class="custom-control custom-checkbox">
+                    <p class="form_p"> ¿En cuál de nustros servicios estás interesado/a?</p>
+                            <input type="checkbox" class="custom-control-input" id="check1">
+                            <label class="custom-control-label" for="customCheck1">Ambientación total</label>
+                            <input type="checkbox" class="custom-control-input" id="check2">
+                            <label class="custom-control-label" for="customCheck1">Sparklers</label>
+                            <input type="checkbox" class="custom-control-input" id="check3">
+                            <label class="custom-control-label" for="customCheck1">Gobo-monograma</label>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Contanos más de tu evento</label>
+                    <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                  </div>
+                <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="check1">
+                            <label class="custom-control-label" for="customCheck1">Quiero recibir sus novedades por mail </label>
+                </div>
+                <button type="submit" class="btn btn-light">Enviar</button>
 			</form>
-		</article>
+        </div>
 	</section>
 	<!-- cierre de form contacto -->
     <footer>
@@ -86,5 +103,6 @@
         </div>
     </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
