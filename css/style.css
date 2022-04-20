@@ -102,16 +102,9 @@ p {
 	list-style: none;
 }
 
-.cabecera .navegacion a {
-	text-decoration: none;
-	color:#1a231f;
-	cursor: pointer; 
-
-}
-
-.cabecera .navegacion a:hover {
- color: #e8eeeb;
-  text-shadow:0px 0px 30px #f3f6f5;
+.nav-link:hover {
+  color: #fff;
+  text-shadow:0px 0px 5px #ffffff;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -332,9 +325,10 @@ p {
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	color: rgb(240, 240, 240);
-	grid-column: 5/7;
-	display: flex;
+	grid-column: 4/8;
 	justify-content: space-around;
+	align-items: center;
+	display: flex;
 }
 
 .navegacion_pie a{
@@ -1133,7 +1127,4 @@ display: none;
 }
 
 }
-
-
-
 
