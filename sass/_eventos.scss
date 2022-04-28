@@ -1,0 +1,71 @@
+/*Landing nueva eventos entrega*/
+//variables
+
+//Variables
+$fuente_ppal:'Raleway', sans-serif;
+
+/* map*/
+$estilos: (
+    fondo:$color_ppal,
+    espacio: 30px,
+    FuenteT: 16px,
+    texto_blanco: #fff
+);
+
+/*MIXIN*/
+@mixin detalles {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    &:hover {
+        color: rgb(252, 255, 210);
+        box-shadow: rgba(252, 255, 210, 0.9) 0px 8px 12px;
+        border-radius: 8px;
+    }
+    
+}
+
+.galeria_landing {
+    @extend #equipo;
+    background-color: $color_secundario;
+}
+
+.contenedor_tarjetas {
+    @extend .cajagrande;
+}
+
+
+.tarjeta {
+    width: 25%;
+    background-color: map-get($estilos, fondo );
+    img {
+        width: 100%;
+    }
+}
+
+.descripcion {
+    margin-top: 20px;
+    padding: map-get($estilos, espacio);
+    h2 {
+        font-size: 25px;
+    }
+}
+
+.saber {
+    background-color: $color_secundario;
+    font-family: $fuente_ppal;
+    font-size: map-get($estilos , FuenteT );
+    color: map-get($estilos, texto_blanco );
+    padding: 10px;
+    @include detalles();
+}
+
+
+.tarjeta_2 {
+    @extend .tarjeta;
+    background-color: $ppal_mid;
+}
+
+.tarjeta_3 {
+    @extend .tarjeta;
+    background-color: $ppal_claro;
+}

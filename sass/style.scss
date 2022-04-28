@@ -6,6 +6,7 @@
 //IMPORT
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;1,400;1,500&display=swap');
 @import "colores";
+@import "eventos";
 
 //Variables
 $fuente_ppal:'Raleway', sans-serif;
@@ -31,7 +32,6 @@ p {
 	background-color: $color_secundario;
 }
 
-*/
 
 //NESTING
 .bannerintro {
@@ -47,29 +47,37 @@ p {
     @media (min-width:601px) and (max-width:900px) {
         padding-top: 20px;
     }
+    @media screen and (max-width:600px) {
+    text-align: center;
+	padding-top: 50px;
+    }
 
 .bannerintrotexto {
 	color: #fff;
-	line-height: 3em;
-	margin-top: 20px;
-	margin-bottom: 20px;
-
     h2 {
 	font-size: 45px;
-    color: #fff;
-	line-height: 3em;
-	margin-top: 20px;
-	margin-bottom: 20px;
-   
     @media (min-width:601px) and (max-width:900px) {
-        font-size: 30px;
-		line-height: normal;
+       font-size: 30px;
+    }
+    @media screen and (max-width:600px) {
+        font-size: 25px;
+        padding: 0 20px 0 20px;
     }
     }
 }
+}
+/*//Sección prueba para extend*/
+
+
+.info-2col {
+    background-color: $color_ppal;
 }
 
+
+
 //Seccion INFO UNO HOME Nesting
+
+
 
 .infouno{
 	height: auto;
@@ -332,7 +340,7 @@ i {
 	display: grid;
 	grid-template-columns: repeat(10,1fr);
 	align-items: center;
-	background-color: #333333;
+	background-color: $color_pie;
 
     @media (min-width:601px) and (max-width:900px){
         display: flex;
@@ -368,7 +376,7 @@ i {
 	color: #ddd;
 	text-decoration: none;    
         &:hover {
-            color: red;
+            color: #fff;
         }
         }
     }
