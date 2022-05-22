@@ -55,6 +55,7 @@
   background-color: #f7de9a;
 }
 
+/**/
 /*Tipografías*/
 h1, h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif;
@@ -134,10 +135,16 @@ p {
 @media (min-width: 601px) and (max-width: 900px) {
   .infouno {
     height: auto;
+    display: grid;
+  }
+}
+
+@media (max-width: 600px) {
+  .infouno {
     display: flex;
+    padding: 20px;
     flex-direction: column;
     align-content: center;
-    background-color: #E8EDDF;
   }
 }
 
@@ -151,8 +158,9 @@ p {
 
 @media (min-width: 601px) and (max-width: 900px) {
   .infouno .colizquierda {
-    text-align: center;
-    padding: 40px;
+    grid-column: 2/6;
+    text-align: left;
+    padding: 20px;
   }
 }
 
@@ -177,6 +185,7 @@ p {
   object-fit: cover;
   width: 100%;
   height: auto;
+  border-radius: 30px 60px;
 }
 
 .caja {
@@ -214,14 +223,33 @@ p {
   object-fit: cover;
   width: 100%;
   height: auto;
+  border-radius: 30px 60px;
 }
 
 i {
   padding: 30px 0 30px 0;
 }
 
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 #equipo, .galeria_landing {
-  padding: 50px;
+  padding: 100px 50px 80px 50px;
   text-align: center;
   background-color: #E8EDDF;
 }
@@ -233,8 +261,8 @@ i {
 #equipo .cajagrande, .galeria_landing .cajagrande, #equipo .contenedor_tarjetas, .galeria_landing .contenedor_tarjetas {
   max-width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  justify-items: center;
   gap: 20px;
 }
 
@@ -250,7 +278,6 @@ i {
 #equipo .cajagrande .box2, .galeria_landing .cajagrande .box2, #equipo .contenedor_tarjetas .box2, .galeria_landing .contenedor_tarjetas .box2 {
   color: #fff;
   background-color: #242423;
-  margin: 80px 25px 80px 0;
   width: 30%;
   padding: 50px 20px 30px 20px;
 }
@@ -261,6 +288,10 @@ i {
 
 #equipo .cajagrande .box2 img, .galeria_landing .cajagrande .box2 img, #equipo .contenedor_tarjetas .box2 img, .galeria_landing .contenedor_tarjetas .box2 img {
   border-radius: 50px 100px;
+}
+
+#equipo .cajagrande .box2 img:hover, .galeria_landing .cajagrande .box2 img:hover, #equipo .contenedor_tarjetas .box2 img:hover, .galeria_landing .contenedor_tarjetas .box2 img:hover {
+  animation: tilt 0.15s infinite;
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
@@ -469,6 +500,7 @@ i {
   color: #f0f0f0;
   grid-column: 5/7;
   display: flex;
+  justify-items: center;
   justify-content: space-around;
 }
 
@@ -486,6 +518,7 @@ i {
 
 .pie .navegacion_pie a {
   color: #ddd;
+  padding: 0 5px 0 5px;
   text-decoration: none;
 }
 
@@ -521,4 +554,81 @@ i {
   .galeria {
     padding: 20px;
   }
+}
+
+/*back to top btn*/
+.top {
+  font-size: 40px;
+  color: #8aa89e;
+  opacity: 0.6;
+  border-radius: 100px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.top:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .top {
+    right: 30px;
+    bottom: 20px;
+  }
+}
+
+.icono:hover {
+  animation: tilt 0.50s ease-in-out;
+}
+
+.bordesco {
+  border-radius: 30px 60px;
+}
+
+.contiene {
+  position: relative;
+}
+
+.contiene:hover {
+  opacity: 1;
+}
+
+.contiene:active {
+  opacity: 1;
+}
+
+.overlay-2 {
+  border-radius: 30px 60px;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(15, 15, 15, 0.7);
+}
+
+.overlay-2:hover {
+  opacity: 1;
+}
+
+.overlay-2:active {
+  opacity: 1;
+}
+
+.textup {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn {
+  margin-top: 20px;
 }
