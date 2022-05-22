@@ -309,16 +309,49 @@ i {
 .contacto {
   width: 100%;
   display: flex;
-  align-content: center;
+  align-content: space-between;
   justify-content: center;
   text-align: center;
-  padding: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .contacto {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contacto {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .contacto .contanos {
   text-align: left;
   width: 40%;
   color: #8aa89e;
+  padding: 50px;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .contacto .contanos {
+    width: 50%;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contacto .contanos {
+    flex-direction: column;
+    align-self: flex-start;
+    text-align: center;
+  }
 }
 
 .contacto .contanos h1 {
@@ -326,9 +359,15 @@ i {
   font-weight: 200;
 }
 
-.contacto .contanos .form {
+@media screen and (max-width: 600px) {
+  .contacto .contanos h1 {
+    font-size: 60px;
+  }
+}
+
+.form {
   line-height: 2.3rem;
-  width: 50%;
+  width: 40%;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: #fff;
@@ -336,7 +375,21 @@ i {
   text-align: left;
 }
 
-.contacto .contanos .form .form_p {
+@media screen and (max-width: 600px) {
+  .form {
+    line-height: 2.3rem;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.form .form_p {
   font-size: 18px;
   font-weight: 600;
   margin-top: 1rem;
@@ -419,6 +472,12 @@ i {
   justify-content: space-around;
 }
 
+@media screen and (max-width: 600px) {
+  .pie .navegacion_pie {
+    display: none;
+  }
+}
+
 @media (min-width: 601px) and (max-width: 900px) {
   .pie .navegacion_pie {
     font-size: 11px;
@@ -442,7 +501,24 @@ i {
   grid-column: 9/11;
 }
 
+@media screen and (max-width: 600px) {
+  .pie .redes {
+    grid-column: 7/10;
+  }
+}
+
 .pie .redes a {
   padding: 5px;
   color: white;
+}
+
+/*Galería eventos*/
+.galeria {
+  padding: 80px;
+}
+
+@media screen and (max-width: 600px) {
+  .galeria {
+    padding: 20px;
+  }
 }

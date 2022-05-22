@@ -257,29 +257,67 @@ i {
 .contacto {
 	width: 100%;
 	display: flex;
-	align-content: center;
+	align-content: space-between;
 	justify-content: center;
 	text-align: center;
-	padding: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media (min-width:601px) and (max-width:900px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    @media screen and (max-width:600px) {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
 .contanos {
 	text-align: left;
 	width: 40%;
 	color: $acento;
-
+    padding: 50px; 
+    @media (min-width:601px) and (max-width:900px) {
+    width: 50%;
+    padding: 0px;
+    }
+    @media screen and (max-width:600px) {
+        flex-direction: column;
+        align-self: flex-start;
+        text-align: center;
+    }
+    
     h1 {
         font-size: 80px;
         font-weight: $jumbo;
+        @media screen and (max-width:600px) {
+         font-size: 60px;
+        }
     }
+    
+}
+}
 
 .form {
 	line-height: 2.3rem;
-	width: 50%;
+	width: 40%;
 	font-family: $fuente_ppal;
 	font-weight: $texto;
 	color: #fff;
 	font-size: 15px;
 	text-align: left;
+     @media screen and (max-width:600px) {
+        line-height: 2.3rem;
+        width: 50%;
+        }
+        @media screen and (max-width:600px) {
+            width: 100%;
+            padding: 20px;
+            
+        }
+        
+
 
     .form_p {
         font-size: 18px ;
@@ -288,8 +326,7 @@ i {
         margin-bottom: 0;
     }
  }
-}
-}
+
 // Video home CSS 
 
 .video-container {
@@ -367,6 +404,10 @@ i {
 	grid-column: 5/7;
 	display: flex;
 	justify-content: space-around;
+    @media screen and (max-width:600px) {
+       display: none;
+        
+    }
 
     @media (min-width:601px) and (max-width:900px) {
         font-size: 11px;
@@ -387,6 +428,10 @@ i {
 
 .redes {
 	grid-column: 9/11;
+    @media screen and (max-width:600px) {
+        grid-column:7/10;
+         
+     }
   a {
 	padding: 5px;
 	color:rgb(255, 255, 255);
@@ -394,3 +439,12 @@ i {
  }
 }
 
+/*Galería eventos*/
+
+.galeria {
+    padding: 80px;
+    @media screen and (max-width:600px) {
+        padding: 20px;
+        
+    }
+}
